@@ -1,0 +1,213 @@
+body{
+    font-family: 'Montserrat, sans-serif';
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {  
+    font-weight: 900;  
+}
+
+p{
+    color: #8f8f8f;
+}
+
+/* Background and Text Colour */
+
+.coloured-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section{
+    background-color: #fff;
+}
+
+/* Title Section */
+
+
+.container-fluid{
+    padding: 3% 15% 5% ;
+    text-align: left;
+    
+}
+
+.title-text{
+    font-size: 3.5rem;  line-height: 1.5;  
+    font-weight: 900;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;  
+    font-weight: bold; 
+     
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.25rem;
+    font-family: 'Montserrat, sans-serif';
+    font-weight: 400;
+}
+
+/* Download Button */
+.download-button{
+    margin: 5% 3% 5% 0%;
+}
+
+/* Title Image */
+.title-image{
+    width: 19%;
+    transform: rotate(25deg);
+    position: absolute;
+    left: 58%;
+
+}
+
+/* --------IMPORTANT NOTES---------
+Making title-image position to absolute, it can allow its below division to take control 
+of its position, (If features section made to absolute, it changes the HTML order & 
+sits above previous section). So changed features section to relative, so that we can 
+change its z-index to sit right above the position as we want. */
+
+
+/* Features */
+#features{
+    padding: 8% 13%;
+    position: relative;
+    /* z-index: 1; */
+    
+}
+
+.features-heading{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.feature-box{
+    
+    padding: 4%;
+}
+
+.features-icons{
+    color: #ef8172;
+    margin-bottom: 1.2rem;
+}
+
+/* Pseudo Class of feature-icons */
+.features-icons:hover{
+    color: #ff4c68;
+}
+
+/* Testimonial section */
+#testimonials{
+    background-color:#ef8172 ;
+   
+
+}
+.testimonial-text{
+    font-size: 2.5rem;  line-height: 1.5;  
+    font-weight: 900; 
+}
+
+.carousel-inner{
+    padding: 8% 15%;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press section */
+
+#press{
+    background-color: #ef8172;
+    
+}
+
+.press-logo{
+    width: 10%;
+    padding-bottom: 3%;
+    margin: 10px 35px 50px;
+}
+
+/* Pricing section */
+#pricing{
+    padding: 100px;
+    
+}
+
+.pricing-column{
+    padding: 5% 2%;
+}
+
+.pricing-heading{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.pricing-text{
+    font-size: 2.5rem;  line-height: 1.5;  
+    font-weight: 900; 
+}
+
+/* Call To Action Section */
+
+.cta-heading{
+    font-family: 'Montserrat, sans-serif';
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin: 0 25%;
+    padding-top: 3%;
+}
+
+/* Footer Section */
+#footer{
+    padding: 2%;
+}
+
+.footer-icons{
+    margin: 1% 1% 2%;
+    
+}
+
+@media  screen and (max-width:1028px) {
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        width: 60%;
+        transform: rotate(0);
+        margin: 10% 0 0 5%;
+    }
+    .download-button{
+        margin-left: 5%;
+    }
+    .cta-heading{
+        font-size: 2.5rem;
+        margin: 0 3% ;
+        padding-bottom: 7%;
+    }
+    #cta{
+        padding: 8%;
+    }
+    #footer{
+        margin: 8%;
+    }
+    .footer-icons{
+        padding: 3% 3%;
+    }
+}
+
